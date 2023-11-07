@@ -1,0 +1,27 @@
+.aboutme{
+    background-color: rgb(252,191,202);
+    body  {
+        // background-image: image("C:\Users\ally0\Desktop\FALL 23\VIST 474\Boilerplate-Mixin_Responsive\Boilerplate\images\dublin.jpg");
+        background-color: rgb(252,191,202);
+
+        align-items: center;
+      }
+
+
+
+    h1{
+        color: rgb(54,13,25);
+        display: flex; justify-content: left;
+        font-family: 'DM Serif Display', serif;
+        font-weight: bolder;
+        font-size: 100px;
+        padding: 60px;
+        margin: 70px;
+    }
+    img{
+        margin:0 auto;
+
+    }
+
+    margin: 40px;
+}

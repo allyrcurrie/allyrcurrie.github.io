@@ -17,11 +17,17 @@
 
 /* dark mode user-agent-styles */
 
+html {
+  color-scheme: dark light;
+}
 
 /* min body height */
 
 body {
+
+  background-color: rgb(252,191,202);
   min-height: 100vh;
+  padding:0 30px;
 }
 
 a, button {
@@ -38,8 +44,17 @@ video {
   display: block;
   max-width: 100%;
 }
+img{
+  object-fit: contain;
+}
 
 
 input, textarea{
   user-select: auto;
+}
+
+ul, ol{
+  max-width: 50%;
+  margin: 0 auto;
+  
 }
