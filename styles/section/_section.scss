@@ -1,0 +1,20 @@
+.section{
+  background-color: rgb(237, 124, 158);
+  font-size: 30px;
+  padding: 40px;
+  box-sizing: border-box;
+  @include respond('1000px'){
+    background-color: rgb(237, 124, 158)
+  };
+  @include respond('800px'){
+    background-color: rgb(237, 124, 158);
+    font-size: 30px;
+  };
+
+  li{
+    font-size: 16px;
+    @include respond('1200px'){
+      font-size: 30px;
+    };
+  }
+}
