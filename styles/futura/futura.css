@@ -1,0 +1,22 @@
+.futura {
+  background-color: rgb(252, 191, 202);
+  display: flex 100px 50px;
+}
+.futura h1 {
+  color: rgb(54, 13, 25);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.futura h2 {
+  color: rgb(54, 13, 25);
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+.futura img {
+  margin: 0 auto;
+}/*# sourceMappingURL=futura.css.map */
