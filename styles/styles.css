@@ -1,3 +1,64 @@
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+body {
+  background-color: rgb(252, 191, 202);
+  margin: 0;
+  min-height: 100vh;
+  padding: 0 30px;
+}
+
+a, button {
+  cursor: revert;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  margin: 0;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+}
+
+ul, ol {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 .projects {
   color: rgb(54, 13, 25);
   text-align: center;
@@ -40,6 +101,7 @@
 .introparagraph {
   background-color: rgb(252, 191, 202);
   align-items: center;
+  padding: 60px;
 }
 .introparagraph h2 {
   color: rgb(54, 13, 25);
@@ -55,7 +117,8 @@
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: xx-large;
-  margin-left: 600px;
+  width: 65%;
+  margin-left: auto;
   padding: 60px;
   background-color: rgb(252, 191, 202);
 }
@@ -201,15 +264,20 @@
   justify-content: center;
   font-family: "DM Serif Display", serif;
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
-.project h2 {
+.project h3 {
   color: rgb(54, 13, 25);
   text-align: center;
-  font-family: "DM Serif Display", serif;
-  font-size: x-large;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: xx-large;
   font-weight: bold;
 }
 .project img {
   margin: 0 auto;
+}
+.project .__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
