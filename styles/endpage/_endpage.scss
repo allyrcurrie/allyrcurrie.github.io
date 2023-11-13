@@ -1,0 +1,64 @@
+.endpage{
+    font-size: smaller;
+    //cursor: progress;
+    background-color: rgb(252,191,202);
+
+    h2{
+        blockquote{
+            color: rgb(54,13,25);
+            background-color: rgb(252,191,202);
+            display: flex; justify-content: center;
+            font-family: 'DM Serif Display', serif;
+            font-weight: bold;
+            font-size: x-large;
+            margin: 40px
+        }
+
+    }
+
+    hr{
+        margin: 40px;
+        background-color: rgb(54,13,25);
+        color: rgb(54,13,25);
+        border-color: rgb(54,13,25);
+    }
+
+    .link{
+        background-color: rgb(252,191,202);
+        color: black;
+        font-family: 'DM Serif Display', serif;
+        text-align: center;
+        //border: solid 2px black;
+        //padding: .7%;
+        //margin: 0 auto;
+        //display: inline;
+        transition: all ease-in-out .3s;
+        cursor: progress;
+        //align-items: center;
+        a{
+            border: solid 2px black;
+            padding: .7%;
+            margin: 0 auto;
+            text-decoration: none;
+            color: rgb(54,13,25);
+            &:visited{
+                color: rgb(167, 21, 87);
+            }
+
+        }
+        
+        
+    
+    }
+
+    footer{
+        color: rgb(54,13,25);
+        background-color: rgb(252,191,202);
+        display: flex; justify-content: center;
+        font-family: 'DM Serif Display', serif;
+        font-weight: bold;
+        font-size: x-large;
+        margin: 40px
+    }
+
+}

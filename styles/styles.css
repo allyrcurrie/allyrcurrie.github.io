@@ -1,0 +1,299 @@
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+body {
+  background-color: rgb(252, 191, 202);
+  margin: 0;
+  min-height: 100vh;
+  padding: 0 30px;
+}
+
+a, button {
+  cursor: revert;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  margin: 0;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+}
+
+ul, ol {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.projects {
+  color: rgb(54, 13, 25);
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: large;
+}
+
+.aboutme {
+  background-color: rgb(252, 191, 202);
+  margin: 40px;
+}
+.aboutme body {
+  background-color: rgb(252, 191, 202);
+  align-items: center;
+}
+.aboutme h1 {
+  color: rgb(54, 13, 25);
+  display: flex;
+  justify-content: left;
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  font-size: 100px;
+  padding: 0px;
+  margin: 10px;
+}
+.aboutme h4 {
+  color: rgb(171, 14, 61);
+  display: flex;
+  justify-content: right;
+  font-family: "Seaweed Script", cursive;
+  font-weight: bolder;
+  font-size: 100px;
+  padding: 0px;
+  margin: 40px;
+}
+.aboutme img {
+  margin: 0 auto;
+}
+
+.introparagraph {
+  background-color: rgb(252, 191, 202);
+  align-items: center;
+  padding: 60px;
+}
+.introparagraph h2 {
+  color: rgb(54, 13, 25);
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: x-large;
+  background-color: rgb(252, 191, 202);
+}
+.introparagraph h3 {
+  color: rgb(54, 13, 25);
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  width: 65%;
+  margin-left: auto;
+  padding-bottom: 80px;
+  background-color: rgb(252, 191, 202);
+}
+.introparagraph p {
+  color: rgb(54, 13, 25);
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: large;
+}
+@media screen and (max-width: 800px) {
+  .introparagraph p {
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 500px) {
+  .introparagraph p {
+    font-size: x-large;
+    color: black;
+  }
+}
+.introparagraph hr {
+  margin: 40px;
+  background-color: rgb(54, 13, 25);
+  color: rgb(54, 13, 25);
+  border-color: rgb(54, 13, 25);
+}
+
+.books h2 {
+  color: rgb(54, 13, 25);
+  background-color: rgb(252, 191, 202);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+.books ul {
+  align-items: center;
+  background-color: rgb(252, 191, 202);
+  color: rgb(54, 13, 25);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: large;
+  display: list-item;
+}
+
+.eating {
+  color: tan;
+}
+.eating h2 {
+  color: rgb(54, 13, 25);
+  background-color: rgb(252, 191, 202);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+.eating ol {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 800px) {
+  .eating ol {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .eating ol {
+    grid-template-columns: 1fr;
+  }
+}
+.eating li {
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column-reverse;
+  color: rgb(54, 13, 25);
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: large;
+}
+
+#__idEating {
+  background-color: rgb(252, 191, 202);
+}
+
+.endpage {
+  font-size: smaller;
+  background-color: rgb(252, 191, 202);
+}
+.endpage h2 blockquote {
+  color: rgb(54, 13, 25);
+  background-color: rgb(252, 191, 202);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: x-large;
+  margin: 40px;
+}
+.endpage hr {
+  margin: 40px;
+  background-color: rgb(54, 13, 25);
+  color: rgb(54, 13, 25);
+  border-color: rgb(54, 13, 25);
+}
+.endpage .link {
+  background-color: rgb(252, 191, 202);
+  color: black;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  cursor: progress;
+}
+.endpage .link a {
+  border: solid 2px black;
+  padding: 0.7%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: rgb(54, 13, 25);
+}
+.endpage .link a:visited {
+  color: rgb(167, 21, 87);
+}
+.endpage footer {
+  color: rgb(54, 13, 25);
+  background-color: rgb(252, 191, 202);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: x-large;
+  margin: 40px;
+}
+
+.project {
+  background-color: rgb(252, 191, 202);
+  display: flex 100px 50px;
+  padding-bottom: 50px;
+}
+.project h1 {
+  color: rgb(54, 13, 25);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+.project h3 {
+  color: rgb(54, 13, 25);
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 0px 120px;
+}
+.project h3.__text {
+  text-align: right;
+}
+.project img {
+  max-width: 600px;
+}
+.project img.__left {
+  text-align: right;
+  margin-left: auto;
+}
+.project .__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.project .__text {
+  text-align: right;
+}
+.project .__futuraimage:hover {
+  transition: padding 0.3s;
+  border-color: white;
+}/*# sourceMappingURL=styles.css.map */

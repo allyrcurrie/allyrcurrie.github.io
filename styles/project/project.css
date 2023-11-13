@@ -1,0 +1,22 @@
+.projects {
+  background-color: rgb(252, 191, 202);
+  display: flex 100px 50px;
+}
+.projects h1 {
+  color: rgb(54, 13, 25);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.projects h2 {
+  color: rgb(54, 13, 25);
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+.projects img {
+  margin: 0 auto;
+}/*# sourceMappingURL=project.css.map */
