@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        color:rgb(54,13,25);
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2em;
+    }
+    nav{
+    background-color: rgb(252,191,202);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family:  'DM Serif Display', serif;
+    font-size: x-large;
+    align-items: center;
+
+    @include respond(430px){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+        transition: top .3s ease;
+        &.active{
+            top: 0;
+
+        }
+
+    }
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+}
