@@ -1,83 +1,79 @@
-.project{
-    background-color: rgb(252,191,202);
-    //color: black;
-    // box-shadow: 100px 50px;
-    display: flex 100px 50px;
-    padding-bottom: 50px;
-    &.--reverse{
-        .__text{
-            h1, h3{
-                text-align: right;
-            }
-        }
-    }
 
-.__text{
-    padding: 0px 120px;
+.homepage{
+.project {
+	background-color: rgb(252, 191, 202);
+	//color: black;
+	// box-shadow: 100px 50px;
+	display: flex 100px 50px;
+	padding-bottom: 50px;
+	&.--reverse {
+		.__text {
+			h1,
+			h3 {
+				text-align: right;
+			}
+		}
+	}
+
+	.__text {
+		padding: 0px 120px;
+	}
+	h1 {
+		color: rgb(54, 13, 25);
+
+		font-family: "DM Serif Display", serif;
+		font-weight: bolder;
+		font-size: xxx-large;
+	}
+	h3 {
+		color: rgb(54, 13, 25);
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: xx-large;
+		font-weight: bold;
+		//position: absolute;
+		&.__text {
+			text-align: right;
+		}
+	}
+
+	img {
+		max-width: 600px;
+		&.__craveable {
+			margin-left: auto;
+		}
+	}
+
+	.__group {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	img {
+		transition: border-color 0.3s;
+		padding: 20px;
+		border: solid 6px transparent;
+		&:hover {
+			border-color: rgb(54, 13, 25);
+		}
+	}
 }
-    h1{
-        color: rgb(54,13,25);
-
-        font-family: 'DM Serif Display', serif;
-        font-weight: bolder;
-        font-size: xxx-large;
-
-    }
-    h3{
-
-        color: rgb(54,13,25);
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: xx-large;
-        font-weight: bold;
-            //position: absolute;
-        &.__text{
-            text-align: right;
-        }
-    }
-
-    img{
-        max-width: 600px;
-        &.__craveable{
-            margin-left: auto;
-        }
-    }
-
-    .__group{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-
-    
-
-    }
-
-    
-    .__group1{
-        display: grid;
-        grid-template-columns: 1fr ;
-        align-items: center;
-
-    
-
-    }
-
-    .__pic{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-
-    
-
-    }
+}
 
 
-    .__futuraimg{
-        transition: ease 0.3s;
-        border-color: black;
-        padding: 10px;
-        border: solid 6px transparent;
 
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

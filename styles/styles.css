@@ -280,58 +280,51 @@ ul, ol {
   grid-column: 1/-1;
 }
 
-.project {
+.homepage .project {
   background-color: rgb(252, 191, 202);
   display: flex 100px 50px;
   padding-bottom: 50px;
 }
-.project.--reverse .__text h1, .project.--reverse .__text h3 {
+.homepage .project.--reverse .__text h1,
+.homepage .project.--reverse .__text h3 {
   text-align: right;
 }
-.project .__text {
+.homepage .project .__text {
   padding: 0px 120px;
 }
-.project h1 {
+.homepage .project h1 {
   color: rgb(54, 13, 25);
   font-family: "DM Serif Display", serif;
   font-weight: bolder;
   font-size: xxx-large;
 }
-.project h3 {
+.homepage .project h3 {
   color: rgb(54, 13, 25);
   font-family: "Roboto Condensed", sans-serif;
   font-size: xx-large;
   font-weight: bold;
 }
-.project h3.__text {
+.homepage .project h3.__text {
   text-align: right;
 }
-.project img {
+.homepage .project img {
   max-width: 600px;
 }
-.project img.__craveable {
+.homepage .project img.__craveable {
   margin-left: auto;
 }
-.project .__group {
+.homepage .project .__group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-.project .__group1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-}
-.project .__pic {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-.project .__futuraimg {
-  transition: ease 0.3s;
-  border-color: black;
-  padding: 10px;
+.homepage .project img {
+  transition: border-color 0.3s;
+  padding: 20px;
   border: solid 6px transparent;
+}
+.homepage .project img:hover {
+  border-color: rgb(54, 13, 25);
 }
 
 header {
@@ -408,4 +401,87 @@ header .hamburger {
   header .hamburger.active span {
     background-color: rgb(252, 191, 202);
   }
+}
+
+.projectPage .aboutme {
+  padding-top: 10%;
+}
+.projectPage .introparagraph {
+  padding-bottom: 10%;
+}
+.projectPage .descript h4 {
+  color: rgb(54, 13, 25);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+.projectPage .project {
+  background-color: rgb(252, 191, 202);
+  display: flex 100px 50px;
+  padding-bottom: 50px;
+}
+.projectPage .project.--reverse {
+  padding-bottom: 0;
+}
+.projectPage .project.--reverse .__text h1,
+.projectPage .project.--reverse .__text h3 {
+  text-align: right;
+}
+.projectPage .project .__text {
+  padding: 0px 120px;
+}
+.projectPage .project h1 {
+  color: rgb(54, 13, 25);
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+.projectPage .project h3 {
+  color: rgb(54, 13, 25);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.projectPage .project h3.__text {
+  text-align: right;
+}
+.projectPage .project img {
+  max-width: 600px;
+}
+.projectPage .project img.__craveable {
+  margin-left: auto;
+}
+.projectPage .project .__group1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.projectPage .project .__group1 .__pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: auto;
+}
+.projectPage .project .__group1 .__cap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  margin: auto;
+}
+.projectPage .project img {
+  transition: border-color 0.3s;
+  padding: 20px;
+  border: solid 6px transparent;
+}
+.projectPage .project .contactMe {
+  color: rgb(252, 191, 202);
+  display: flex;
+  justify-content: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: xx-large;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  grid-column: 1/-1;
 }/*# sourceMappingURL=styles.css.map */

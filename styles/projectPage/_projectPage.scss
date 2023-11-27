@@ -1,0 +1,105 @@
+.projectPage{
+    .aboutme{
+        padding-top: 10%;
+    }
+    .introparagraph{
+        padding-bottom: 10%;
+    }
+    .descript{
+        h4{
+        color: rgb(54, 13, 25);
+        
+                font-family: "Roboto Condensed", sans-serif;
+                font-weight: bolder;
+                font-size: x-large;
+                //padding-right: 140px;
+        }
+
+    }
+        .project {
+            background-color: rgb(252, 191, 202);
+            //color: black;
+            // box-shadow: 100px 50px;
+            display: flex 100px 50px;
+            padding-bottom: 50px;
+            &.--reverse {
+                padding-bottom: 0;
+                .__text {
+                    h1,
+                    h3 {
+                        text-align: right;
+                    }
+                }
+            }
+        
+            .__text {
+                padding: 0px 120px;
+            }
+            h1 {
+                color: rgb(54, 13, 25);
+        
+                font-family: "DM Serif Display", serif;
+                font-weight: bolder;
+                font-size: xxx-large;
+            }
+            h3 {
+                color: rgb(54, 13, 25);
+                font-family: "Roboto Condensed", sans-serif;
+                font-size: xx-large;
+                font-weight: bold;
+                //position: absolute;
+                &.__text {
+                    text-align: right;
+                }
+            }
+        
+            img {
+                max-width: 600px;
+                &.__craveable {
+                    margin-left: auto;
+                }
+            }
+        
+            .__group1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-content: center; 
+            
+                .__pic {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: center; 
+                    margin: auto;
+                }
+                .__cap {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    justify-content: center; 
+                    margin: auto;
+                }
+            }
+            
+            
+        
+            img {
+                transition: border-color 0.3s;
+                padding: 20px;
+                border: solid 6px transparent;
+                // &:hover {
+                //    border-color: rgb(54, 13, 25);
+                //}
+            }
+
+            .contactMe{
+                color: rgb(252,191,202);
+                display: flex; justify-content: center;
+                font-family: 'DM Serif Display', serif;
+                font-weight: bold;
+                font-size: xx-large;
+                padding-top: 35px;
+                padding-bottom: 15px;
+                grid-column: 1/-1;
+            }
+        }
+}
