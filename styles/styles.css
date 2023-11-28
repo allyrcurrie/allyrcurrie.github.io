@@ -480,7 +480,11 @@ header .hamburger {
   margin: auto;
 }
 .projectPage .project .__group1 .__pic .__futurain {
-  width: 300%;
+  margin: auto;
+  align-items: center;
+}
+.projectPage .project .__group1 .__pic .__futuraimage {
+  margin: auto;
   align-items: center;
 }
 .projectPage .project .__group1 .__cap {
