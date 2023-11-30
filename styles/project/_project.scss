@@ -17,6 +17,9 @@
 
 	.__text {
 		padding: 0px 120px;
+		@include respond('430px'){
+			padding: 0%;
+		}
 	}
 	h1 {
 		color: rgb(54, 13, 25);
@@ -34,6 +37,9 @@
 		&.__text {
 			text-align: right;
 		}
+		@include respond("430px"){
+			font-size: 28px;
+		}
 	}
 
 	img {
@@ -47,6 +53,12 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
+		@include respond('430px'){
+			grid-template-columns: 1fr;
+			img{
+				max-width: 100%;
+			}
+		}
 	}
 
 	img {
