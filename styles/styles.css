@@ -178,65 +178,6 @@ ul, ol {
   border-color: rgb(54, 13, 25);
 }
 
-.books h2 {
-  color: rgb(54, 13, 25);
-  background-color: rgb(252, 191, 202);
-  display: flex;
-  justify-content: center;
-  font-family: "DM Serif Display", serif;
-  font-weight: bold;
-  font-size: x-large;
-}
-.books ul {
-  align-items: center;
-  background-color: rgb(252, 191, 202);
-  color: rgb(54, 13, 25);
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: large;
-  display: list-item;
-}
-
-.eating {
-  color: tan;
-}
-.eating h2 {
-  color: rgb(54, 13, 25);
-  background-color: rgb(252, 191, 202);
-  display: flex;
-  justify-content: center;
-  font-family: "DM Serif Display", serif;
-  font-weight: bold;
-  font-size: x-large;
-}
-.eating ol {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-@media screen and (max-width: 800px) {
-  .eating ol {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 500px) {
-  .eating ol {
-    grid-template-columns: 1fr;
-  }
-}
-.eating li {
-  align-items: center;
-  justify-content: baseline;
-  flex-direction: column-reverse;
-  color: rgb(54, 13, 25);
-  text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: large;
-}
-
-#__idEating {
-  background-color: rgb(252, 191, 202);
-}
-
 .endpage {
   font-size: smaller;
   background-color: rgb(54, 13, 25);
@@ -249,16 +190,6 @@ ul, ol {
   grid-template-columns: 1fr 1fr;
   max-width: 700px;
   margin: auto;
-}
-.endpage h2 blockquote {
-  color: rgb(54, 13, 25);
-  display: flex;
-  justify-content: center;
-  font-family: "DM Serif Display", serif;
-  font-weight: bold;
-  font-size: x-large;
-  padding-top: 40px;
-  padding-bottom: 15px;
 }
 .endpage h3 {
   color: rgb(252, 191, 202);
@@ -569,6 +500,9 @@ header .hamburger {
   max-width: 100px;
   max-width: unset;
 }
+.projectPage .project .__group1 .__cap .__futurain img {
+  max-width: 470px;
+}
 @media screen and (max-width: 430px) {
   .projectPage .project .__group1 .__cap {
     grid-template-columns: 1fr;
@@ -598,4 +532,110 @@ header .hamburger {
   padding-top: 35px;
   padding-bottom: 15px;
   grid-column: 1/-1;
+}
+
+@media screen and (max-width: 430px) {
+  .homepageabout {
+    margin-left: 0;
+    font-size: medium;
+  }
+}
+.homepageabout .project {
+  background-color: rgb(252, 191, 202);
+  display: flex 100px 50px;
+  padding-bottom: 50px;
+}
+.homepageabout .project.--reverse {
+  padding-bottom: 200px;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project.--reverse {
+    padding-bottom: 0px;
+  }
+}
+.homepageabout .project.--reverse .__text h1,
+.homepageabout .project.--reverse .__text h3 {
+  text-align: left;
+}
+.homepageabout .project .__text {
+  padding: 0px 120px;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project .__text {
+    padding: 0%;
+  }
+}
+.homepageabout .project h1 {
+  color: rgb(54, 13, 25);
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  font-size: 75px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project h1 {
+    margin-left: 0;
+    font-size: 50px;
+  }
+}
+.homepageabout .project h4 {
+  color: rgb(171, 14, 61);
+  font-family: "Seaweed Script", cursive;
+  font-weight: bolder;
+  font-size: 55px;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project h4 {
+    margin-left: 0;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+.homepageabout .project h3 {
+  color: rgb(54, 13, 25);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+.homepageabout .project h3.__text {
+  text-align: right;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project h3 {
+    font-size: 18px;
+  }
+}
+.homepageabout .project .__group {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project .__group {
+    padding-top: 30px;
+  }
+}
+.homepageabout .project .__group .__text {
+  text-align: left;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project .__group {
+    grid-template-columns: 1fr;
+  }
+  .homepageabout .project .__group img {
+    max-width: 100%;
+  }
+}
+.homepageabout .project .__meimg {
+  transition: border-color 0.3s;
+  border: solid 6px transparent;
+}
+@media screen and (max-width: 430px) {
+  .homepageabout .project .__meimg {
+    padding-bottom: 20px;
+  }
+}
+.homepageabout .project .__meimg:hover {
+  border-color: transparent;
 }/*# sourceMappingURL=styles.css.map */

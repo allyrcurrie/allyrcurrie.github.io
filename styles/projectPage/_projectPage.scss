@@ -100,7 +100,7 @@
                     margin: auto;
                     .__futurain{
                         margin: auto;
-                        align-items: center
+                        align-items: center;
                     }
                     .__futuraimage{
                         margin: auto;
@@ -120,6 +120,11 @@
                         margin: auto;
                         max-width: 100px;
                         max-width: unset;
+                    }
+                    .__futurain{
+                        img {
+                            max-width: 470px;
+                        }
                     }
                     @include respond("430px"){
                         grid-template-columns: 1fr;
